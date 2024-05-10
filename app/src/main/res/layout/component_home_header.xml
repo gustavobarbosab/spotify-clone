@@ -26,12 +26,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
+            android:id="@+id/music"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="8dp"
             android:text="Music" />
 
         <Button
+            android:id="@+id/podcasts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Podcast" />

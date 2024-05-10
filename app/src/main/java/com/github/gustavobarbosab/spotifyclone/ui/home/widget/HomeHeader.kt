@@ -18,6 +18,15 @@ class HomeHeader @JvmOverloads constructor(
         binding.image.loadFromUrl(url)
     }
 
-    fun setFirstButtonListener() {
+    fun setImageClickListener(listener: () -> Unit) {
+        binding.image.setOnClickListener { listener() }
+    }
+
+    fun setMusicButtonClickListener(listener: () -> Unit) {
+        binding.music.setOnClickListener { listener() }
+    }
+
+    fun setPodcastButtonClickListener(listener: () -> Unit) {
+        binding.podcasts.setOnClickListener { listener() }
     }
 }
