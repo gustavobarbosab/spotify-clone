@@ -33,5 +33,7 @@ class HomeFragment : Fragment() {
             list.add(model)
         }
         binding.popSection.setMusicList(list)
+        binding.laughSection.setMusicList(list)
+        binding.biggestHitsSection.setMusicList(list)
     }
 }
