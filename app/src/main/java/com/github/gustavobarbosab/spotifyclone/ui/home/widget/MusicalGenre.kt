@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.github.gustavobarbosab.spotifyclone.R
 import com.github.gustavobarbosab.spotifyclone.databinding.ComponentGenresBinding
+import com.github.gustavobarbosab.spotifyclone.ui.home.adapter.MusicSectionAdapter
+import com.github.gustavobarbosab.spotifyclone.ui.home.model.MusicModel
 
 class MusicalGenre @JvmOverloads constructor(
     context: Context,
@@ -23,5 +25,10 @@ class MusicalGenre @JvmOverloads constructor(
 
     fun setTitle(title: String?) {
         binding.sectionTitle.text = title
+    }
+
+    fun setMusicList(musicList: List<MusicModel>) {
+        val adapter = MusicSectionAdapter(musicList)
+        binding.sectionList.adapter = adapter
     }
 }
