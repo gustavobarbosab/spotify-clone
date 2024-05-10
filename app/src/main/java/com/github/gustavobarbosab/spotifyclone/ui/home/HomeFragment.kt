@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.firstSectionTitle.text = "Rock"
+//        binding.firstSectionTitle.text = "Rock"
         val list = listOf(
             MusicModel(
                 "1",
@@ -88,6 +88,6 @@ class HomeFragment : Fragment() {
             ),
         )
         val adapter = MusicSectionAdapter(list)
-        binding.firstSectionList.adapter = adapter
+//        binding.firstSectionList.adapter = adapter
     }
 }
